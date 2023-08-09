@@ -1,0 +1,15 @@
+Task10
+n = int(input('Пользователь, укажите число монет: '))
+from random import randint
+storona1 = 0
+storona2 = 0
+for i in range(n):
+    temp = randint(0, 1)
+    print(temp, end=' ')
+    if temp > 0: storona1 += 1
+    else: storona2 += 1
+print()
+if storona1 > storona2:
+    print(f'Переверните {storona2} монет')
+else:
+    print(f'Переверните {storona1} монет')

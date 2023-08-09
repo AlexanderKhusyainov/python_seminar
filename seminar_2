@@ -13,3 +13,12 @@ if storona1 > storona2:
     print(f'Переверните {storona2} монет')
 else:
     print(f'Переверните {storona1} монет')
+Task12
+s = int(input('Пользователь, Введите число S '))
+p = int(input('Пользователь, Введите число P '))
+x = int
+y = int
+for x in range(s):
+    for y in range(p):
+        if s == x + y and p == x * y:
+            print(x, y)

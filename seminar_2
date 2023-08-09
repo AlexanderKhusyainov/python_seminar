@@ -22,3 +22,16 @@ for x in range(s):
     for y in range(p):
         if s == x + y and p == x * y:
             print(x, y)
+Task14
+n = int(input('Пользователь, Введите число N '))
+a = 2
+b = 0
+for i in range(n):
+    if b != 1:
+        a = a ** i
+        if a <= n:
+            print(a, end=' ')
+            a = 2
+        else:
+            b = 1
+            print()
